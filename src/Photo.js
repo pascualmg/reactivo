@@ -1,6 +1,6 @@
 import React from 'react';
 
 class Photo extends React.Component{
- render = () => <span className={"Photo"}>aquí var mi texto .</span>
+ render = (name) => <span className={"Photo"}>{name}</span>
 }
 export default Photo;
