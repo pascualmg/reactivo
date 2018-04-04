@@ -1,8 +1,7 @@
 import React from 'react';
 import Photo from "./Photo";
 
-import {Observable, Subject, ReplaySubject, from, of, range} from 'rxjs';
-import {map, filter, switchMap} from 'rxjs/operators';
+import {Observable} from 'rxjs';
 
 export default class PhotoGrid extends React.Component {
   arr = ['algo', 'algo', 'algo', 'algo', 'algo', 'algo', 'algo', 'algo', 'algo', 'algo'];
@@ -14,7 +13,8 @@ export default class PhotoGrid extends React.Component {
     flujete$
       .subscribe({
       next: x => {
-        newArr.push(<span><Photo name={x.i}/></span>)
+        console.log('llega', x);
+        newArr.push(<span><Photo name={x.i}/>{x.name}</span>)
       },
       error: err => console.error('something wrong occurred: ' + err),
       complete: () => console.log('done'),

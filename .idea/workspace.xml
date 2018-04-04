@@ -48,15 +48,15 @@
           <file leaf-file-name="PhotoGrid.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/PhotoGrid.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="129">
-                  <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+                <state relative-caret-position="57">
+                  <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
                   <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                    <element signature="e#511#703#0" expanded="true" />
+                    <element signature="e#392#742#0" expanded="true" />
+                    <element signature="e#511#717#0" expanded="true" />
                     <element signature="e#530#531#0" expanded="true" />
-                    <element signature="e#581#582#0" expanded="true" />
+                    <element signature="e#595#596#0" expanded="true" />
                     <element signature="e#747#873#0" expanded="true" />
-                    <element signature="e#982#1105#0" expanded="true" />
+                    <element signature="e#995#1118#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -112,8 +112,8 @@
           <file leaf-file-name="Photo.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Photo.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="95">
-                  <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+                <state relative-caret-position="19">
+                  <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
                 </state>
               </provider>
             </entry>
@@ -460,7 +460,7 @@
       <workItem from="1522862296893" duration="138000" />
       <workItem from="1522862451608" duration="4180000" />
       <workItem from="1522866738634" duration="6812000" />
-      <workItem from="1522877263291" duration="3689000" />
+      <workItem from="1522877263291" duration="4399000" />
     </task>
     <task id="LOCAL-00001" summary="rulando un poco">
       <created>1522867155063</created>
@@ -497,7 +497,21 @@
       <option name="project" value="LOCAL" />
       <updated>1522878308699</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="omg wtf">
+      <created>1522881059110</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1522881059110</updated>
+    </task>
+    <task id="LOCAL-00007" summary="paranolla y se va la olla">
+      <created>1522881575693</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1522881575693</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -530,7 +544,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26294000" />
+    <option name="totallyTimeSpent" value="27004000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1024" height="1114" extended-state="0" />
@@ -600,7 +614,9 @@
     <MESSAGE value="un poco de reformat y pienso más tarde....." />
     <MESSAGE value="un observable desde un array... oops" />
     <MESSAGE value="medio rulando?" />
-    <option name="LAST_COMMIT_MESSAGE" value="medio rulando?" />
+    <MESSAGE value="omg wtf" />
+    <MESSAGE value="paranolla y se va la olla" />
+    <option name="LAST_COMMIT_MESSAGE" value="paranolla y se va la olla" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -663,12 +679,12 @@
         <state relative-caret-position="190">
           <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#511#703#0" expanded="true" />
+            <element signature="e#392#742#0" expanded="true" />
+            <element signature="e#511#717#0" expanded="true" />
             <element signature="e#530#531#0" expanded="true" />
-            <element signature="e#581#582#0" expanded="true" />
+            <element signature="e#595#596#0" expanded="true" />
             <element signature="e#747#873#0" expanded="true" />
-            <element signature="e#982#1105#0" expanded="true" />
+            <element signature="e#995#1118#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -696,12 +712,12 @@
         <state relative-caret-position="152">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#511#703#0" expanded="true" />
+            <element signature="e#392#742#0" expanded="true" />
+            <element signature="e#511#717#0" expanded="true" />
             <element signature="e#530#531#0" expanded="true" />
-            <element signature="e#581#582#0" expanded="true" />
+            <element signature="e#595#596#0" expanded="true" />
             <element signature="e#747#873#0" expanded="true" />
-            <element signature="e#982#1105#0" expanded="true" />
+            <element signature="e#995#1118#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1044,13 +1060,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Photo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/rxjs/_esm5/internal/util/subscribeTo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="109">
@@ -1069,17 +1078,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Photo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/PhotoGrid.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+        <state relative-caret-position="57">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#511#703#0" expanded="true" />
+            <element signature="e#392#742#0" expanded="true" />
+            <element signature="e#511#717#0" expanded="true" />
             <element signature="e#530#531#0" expanded="true" />
-            <element signature="e#581#582#0" expanded="true" />
+            <element signature="e#595#596#0" expanded="true" />
             <element signature="e#747#873#0" expanded="true" />
-            <element signature="e#982#1105#0" expanded="true" />
+            <element signature="e#995#1118#0" expanded="true" />
           </folding>
         </state>
       </provider>
