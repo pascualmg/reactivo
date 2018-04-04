@@ -14,7 +14,7 @@ export default class PhotoGrid extends React.Component {
     flujete$
       .subscribe({
       next: x => {
-        newArr.push(<span><Photo name={x.item}/></span>)
+        newArr.push(<span><Photo name={x.i}/></span>)
       },
       error: err => console.error('something wrong occurred: ' + err),
       complete: () => console.log('done'),
