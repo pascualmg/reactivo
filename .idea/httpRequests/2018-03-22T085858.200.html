@@ -1,0 +1,1048 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd ">
+<html>
+<head>
+    <title>GeoNames</title>
+    <link rel="search" type="application/opensearchdescription+xml" title="geonames"
+          href="http://www.geonames.org/opensearch-description.xml">
+    <link href="/geonames.ico" rel="shortcut icon">
+    <link rel="StyleSheet" href="/geonames.css" type="text/css">
+</head>
+<body>
+<table id="topmenutable" cellpadding="0" cellspacing="0">
+    <tr>
+        <td class="topmenu">&nbsp;<a href="/" title="GeoName Home">&nbsp;GeoNames Home</a>&nbsp;|&nbsp;<a
+                href="/postal-codes/" title="Postal Codes">Postal Codes</a>&nbsp;|&nbsp;<a href="/export/"
+                                                                                           title="Database Dump and Webservice API">Download
+            / Webservice</a>&nbsp;|&nbsp;<a href="/about.html" title="About GeoNames">About</a>&nbsp;
+        </td>
+        <td class="topsearch">
+   <span id="topmenulogin">
+<a href="http://www.geonames.org/login" title="login or create new user account">login</a>
+   </span>
+        </td>
+    </tr>
+</table>
+
+
+<script type="text/javascript">
+  function searchOnMap() {
+    if (document.searchForm.q.value == '') {
+      alert('Please enter a name.');
+      return;
+    }
+    var q = encodeURIComponent(document.searchForm.q.value);
+    if (document.searchForm.country.value != '') {
+      q = q + '&country=' + document.searchForm.country.value;
+    }
+    if (document.searchForm.featureClass != null && document.searchForm.featureClass.value != '') {
+      q = q + '&featureClass=' + document.searchForm.featureClass.value;
+    }
+    if (document.searchForm.continentCode != null && document.searchForm.continentCode.value != '') {
+      q = q + '&continentCode=' + document.searchForm.continentCode.value;
+    }
+    window.location = '/maps/showOnMap?q=' + q;
+  }
+</script>
+
+<br>
+<div id="search">
+    <form name="searchForm" method="GET" action="/search.html?">
+        <input name="q" size="40" value="" type="text">
+        <select name="country" style="width:200px;">
+            <option value="" selected> all countries</option>
+            <option value="CS"></option>
+            <option value="AF"> Afghanistan</option>
+            <option value="AL"> Albania</option>
+            <option value="DZ"> Algeria</option>
+            <option value="AS"> American Samoa</option>
+            <option value="AD"> Andorra</option>
+            <option value="AO"> Angola</option>
+            <option value="AI"> Anguilla</option>
+            <option value="AQ"> Antarctica</option>
+            <option value="AG"> Antigua and Barbuda</option>
+            <option value="AR"> Argentina</option>
+            <option value="AM"> Armenia</option>
+            <option value="AW"> Aruba</option>
+            <option value="AU"> Australia</option>
+            <option value="AT"> Austria</option>
+            <option value="AZ"> Azerbaijan</option>
+            <option value="BS"> Bahamas</option>
+            <option value="BH"> Bahrain</option>
+            <option value="BD"> Bangladesh</option>
+            <option value="BB"> Barbados</option>
+            <option value="BY"> Belarus</option>
+            <option value="BE"> Belgium</option>
+            <option value="BZ"> Belize</option>
+            <option value="BJ"> Benin</option>
+            <option value="BM"> Bermuda</option>
+            <option value="BT"> Bhutan</option>
+            <option value="BO"> Bolivia</option>
+            <option value="BQ"> Bonaire</option>
+            <option value="BA"> Bosnia and Herzegovina</option>
+            <option value="BW"> Botswana</option>
+            <option value="BV"> Bouvet Island</option>
+            <option value="BR"> Brazil</option>
+            <option value="IO"> British Indian Ocean Territory</option>
+            <option value="VG"> British Virgin Islands</option>
+            <option value="BN"> Brunei</option>
+            <option value="BG"> Bulgaria</option>
+            <option value="BF"> Burkina Faso</option>
+            <option value="BI"> Burundi</option>
+            <option value="KH"> Cambodia</option>
+            <option value="CM"> Cameroon</option>
+            <option value="CA"> Canada</option>
+            <option value="CV"> Cape Verde</option>
+            <option value="KY"> Cayman Islands</option>
+            <option value="CF"> Central African Republic</option>
+            <option value="TD"> Chad</option>
+            <option value="CL"> Chile</option>
+            <option value="CN"> China</option>
+            <option value="CX"> Christmas Island</option>
+            <option value="CC"> Cocos [Keeling] Islands</option>
+            <option value="CO"> Colombia</option>
+            <option value="KM"> Comoros</option>
+            <option value="CK"> Cook Islands</option>
+            <option value="CR"> Costa Rica</option>
+            <option value="HR"> Croatia</option>
+            <option value="CU"> Cuba</option>
+            <option value="CW"> Curacao</option>
+            <option value="CY"> Cyprus</option>
+            <option value="CZ"> Czechia</option>
+            <option value="CD"> Democratic Republic of the Congo</option>
+            <option value="DK"> Denmark</option>
+            <option value="DJ"> Djibouti</option>
+            <option value="DM"> Dominica</option>
+            <option value="DO"> Dominican Republic</option>
+            <option value="TL"> East Timor</option>
+            <option value="EC"> Ecuador</option>
+            <option value="EG"> Egypt</option>
+            <option value="SV"> El Salvador</option>
+            <option value="GQ"> Equatorial Guinea</option>
+            <option value="ER"> Eritrea</option>
+            <option value="EE"> Estonia</option>
+            <option value="ET"> Ethiopia</option>
+            <option value="FK"> Falkland Islands</option>
+            <option value="FO"> Faroe Islands</option>
+            <option value="FJ"> Fiji</option>
+            <option value="FI"> Finland</option>
+            <option value="FR"> France</option>
+            <option value="GF"> French Guiana</option>
+            <option value="PF"> French Polynesia</option>
+            <option value="TF"> French Southern Territories</option>
+            <option value="GA"> Gabon</option>
+            <option value="GM"> Gambia</option>
+            <option value="GE"> Georgia</option>
+            <option value="DE"> Germany</option>
+            <option value="GH"> Ghana</option>
+            <option value="GI"> Gibraltar</option>
+            <option value="GR"> Greece</option>
+            <option value="GL"> Greenland</option>
+            <option value="GD"> Grenada</option>
+            <option value="GP"> Guadeloupe</option>
+            <option value="GU"> Guam</option>
+            <option value="GT"> Guatemala</option>
+            <option value="GG"> Guernsey</option>
+            <option value="GN"> Guinea</option>
+            <option value="GW"> Guinea-Bissau</option>
+            <option value="GY"> Guyana</option>
+            <option value="HT"> Haiti</option>
+            <option value="HM"> Heard Island and McDonald Islands</option>
+            <option value="HN"> Honduras</option>
+            <option value="HK"> Hong Kong</option>
+            <option value="HU"> Hungary</option>
+            <option value="IS"> Iceland</option>
+            <option value="IN"> India</option>
+            <option value="ID"> Indonesia</option>
+            <option value="IR"> Iran</option>
+            <option value="IQ"> Iraq</option>
+            <option value="IE"> Ireland</option>
+            <option value="IM"> Isle of Man</option>
+            <option value="IL"> Israel</option>
+            <option value="IT"> Italy</option>
+            <option value="CI"> Ivory Coast</option>
+            <option value="JM"> Jamaica</option>
+            <option value="JP"> Japan</option>
+            <option value="JE"> Jersey</option>
+            <option value="JO"> Jordan</option>
+            <option value="KZ"> Kazakhstan</option>
+            <option value="KE"> Kenya</option>
+            <option value="KI"> Kiribati</option>
+            <option value="XK"> Kosovo</option>
+            <option value="KW"> Kuwait</option>
+            <option value="KG"> Kyrgyzstan</option>
+            <option value="LA"> Laos</option>
+            <option value="LV"> Latvia</option>
+            <option value="LB"> Lebanon</option>
+            <option value="LS"> Lesotho</option>
+            <option value="LR"> Liberia</option>
+            <option value="LY"> Libya</option>
+            <option value="LI"> Liechtenstein</option>
+            <option value="LT"> Lithuania</option>
+            <option value="LU"> Luxembourg</option>
+            <option value="MO"> Macao</option>
+            <option value="MK"> Macedonia</option>
+            <option value="MG"> Madagascar</option>
+            <option value="MW"> Malawi</option>
+            <option value="MY"> Malaysia</option>
+            <option value="MV"> Maldives</option>
+            <option value="ML"> Mali</option>
+            <option value="MT"> Malta</option>
+            <option value="MH"> Marshall Islands</option>
+            <option value="MQ"> Martinique</option>
+            <option value="MR"> Mauritania</option>
+            <option value="MU"> Mauritius</option>
+            <option value="YT"> Mayotte</option>
+            <option value="MX"> Mexico</option>
+            <option value="FM"> Micronesia</option>
+            <option value="MD"> Moldova</option>
+            <option value="MC"> Monaco</option>
+            <option value="MN"> Mongolia</option>
+            <option value="ME"> Montenegro</option>
+            <option value="MS"> Montserrat</option>
+            <option value="MA"> Morocco</option>
+            <option value="MZ"> Mozambique</option>
+            <option value="MM"> Myanmar [Burma]</option>
+            <option value="NA"> Namibia</option>
+            <option value="NR"> Nauru</option>
+            <option value="NP"> Nepal</option>
+            <option value="NL"> Netherlands</option>
+            <option value="NC"> New Caledonia</option>
+            <option value="NZ"> New Zealand</option>
+            <option value="NI"> Nicaragua</option>
+            <option value="NE"> Niger</option>
+            <option value="NG"> Nigeria</option>
+            <option value="NU"> Niue</option>
+            <option value="NF"> Norfolk Island</option>
+            <option value="KP"> North Korea</option>
+            <option value="MP"> Northern Mariana Islands</option>
+            <option value="NO"> Norway</option>
+            <option value="OM"> Oman</option>
+            <option value="PK"> Pakistan</option>
+            <option value="PW"> Palau</option>
+            <option value="PS"> Palestine</option>
+            <option value="PA"> Panama</option>
+            <option value="PG"> Papua New Guinea</option>
+            <option value="PY"> Paraguay</option>
+            <option value="PE"> Peru</option>
+            <option value="PH"> Philippines</option>
+            <option value="PN"> Pitcairn Islands</option>
+            <option value="PL"> Poland</option>
+            <option value="PT"> Portugal</option>
+            <option value="PR"> Puerto Rico</option>
+            <option value="QA"> Qatar</option>
+            <option value="CG"> Republic of the Congo</option>
+            <option value="RO"> Romania</option>
+            <option value="RU"> Russia</option>
+            <option value="RW"> Rwanda</option>
+            <option value="RE"> Réunion</option>
+            <option value="BL"> Saint Barthélemy</option>
+            <option value="SH"> Saint Helena</option>
+            <option value="KN"> Saint Kitts and Nevis</option>
+            <option value="LC"> Saint Lucia</option>
+            <option value="MF"> Saint Martin</option>
+            <option value="PM"> Saint Pierre and Miquelon</option>
+            <option value="VC"> Saint Vincent and the Grenadines</option>
+            <option value="WS"> Samoa</option>
+            <option value="SM"> San Marino</option>
+            <option value="SA"> Saudi Arabia</option>
+            <option value="SN"> Senegal</option>
+            <option value="RS"> Serbia</option>
+            <option value="SC"> Seychelles</option>
+            <option value="SL"> Sierra Leone</option>
+            <option value="SG"> Singapore</option>
+            <option value="SX"> Sint Maarten</option>
+            <option value="SK"> Slovakia</option>
+            <option value="SI"> Slovenia</option>
+            <option value="SB"> Solomon Islands</option>
+            <option value="SO"> Somalia</option>
+            <option value="ZA"> South Africa</option>
+            <option value="GS"> South Georgia and the South Sandwich Islands</option>
+            <option value="KR"> South Korea</option>
+            <option value="SS"> South Sudan</option>
+            <option value="ES"> Spain</option>
+            <option value="LK"> Sri Lanka</option>
+            <option value="SD"> Sudan</option>
+            <option value="SR"> Suriname</option>
+            <option value="SJ"> Svalbard and Jan Mayen</option>
+            <option value="SZ"> Swaziland</option>
+            <option value="SE"> Sweden</option>
+            <option value="CH"> Switzerland</option>
+            <option value="SY"> Syria</option>
+            <option value="ST"> São Tomé and Príncipe</option>
+            <option value="TW"> Taiwan</option>
+            <option value="TJ"> Tajikistan</option>
+            <option value="TZ"> Tanzania</option>
+            <option value="TH"> Thailand</option>
+            <option value="TG"> Togo</option>
+            <option value="TK"> Tokelau</option>
+            <option value="TO"> Tonga</option>
+            <option value="TT"> Trinidad and Tobago</option>
+            <option value="TN"> Tunisia</option>
+            <option value="TR"> Turkey</option>
+            <option value="TM"> Turkmenistan</option>
+            <option value="TC"> Turks and Caicos Islands</option>
+            <option value="TV"> Tuvalu</option>
+            <option value="UM"> U.S. Minor Outlying Islands</option>
+            <option value="VI"> U.S. Virgin Islands</option>
+            <option value="UG"> Uganda</option>
+            <option value="UA"> Ukraine</option>
+            <option value="AE"> United Arab Emirates</option>
+            <option value="GB"> United Kingdom</option>
+            <option value="US"> United States</option>
+            <option value="UY"> Uruguay</option>
+            <option value="UZ"> Uzbekistan</option>
+            <option value="VU"> Vanuatu</option>
+            <option value="VA"> Vatican City</option>
+            <option value="VE"> Venezuela</option>
+            <option value="VN"> Vietnam</option>
+            <option value="WF"> Wallis and Futuna</option>
+            <option value="EH"> Western Sahara</option>
+            <option value="YE"> Yemen</option>
+            <option value="ZM"> Zambia</option>
+            <option value="ZW"> Zimbabwe</option>
+            <option value="AX"> Åland</option>
+        </select>
+        <br><input type="submit" value="search">
+        <input type="button" value="show on map" onClick="javascript:searchOnMap();return false;">
+
+        <small>[<a href="/advanced-search.html?">advanced search</a>]</small>
+    </form>
+    <table class="restable">
+        <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Country</th>
+            <th>Feature class</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+        </tr>
+        <tr>
+            <td>
+                <small>1</small>
+                <a href="http://www.geonames.org/2363294/zive.html"><img src="/maps/markers/m10-WHITE-P.png" border="0"
+                                                                         alt="P"></a></td>
+            <td><a href="/maps/google_6.733_1.117.html">Zivé</a><br>
+                <small></small>
+                <span class="geo" style="display:none;"><span class="latitude">6.7333333</span><span class="longitude">1.1166667</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>populated place</td>
+            <td nowrap>N 6° 44' 0''</td>
+            <td nowrap>E 1° 7' 0''</td>
+        </tr>
+        <tr class="odd">
+            <td>
+                <small>2</small>
+                <a href="http://www.geonames.org/2363295/ziovounou.html"><img src="/maps/markers/m10-WHITE-P.png"
+                                                                              border="0" alt="P"></a></td>
+            <td><a href="/maps/google_6.395_1.111.html">Ziovounou</a><br>
+                <small></small>
+                <span class="geo" style="display:none;"><span class="latitude">6.395278</span><span class="longitude">1.111389</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>, Maritime</td>
+            <td>populated place</td>
+            <td nowrap>N 6° 23' 43''</td>
+            <td nowrap>E 1° 6' 41''</td>
+        </tr>
+        <tr>
+            <td>
+                <small>3</small>
+                <a href="http://www.geonames.org/2363296/ziovou.html"><img src="/maps/markers/m10-BLUE-H.png" border="0"
+                                                                           alt="H"></a></td>
+            <td><a href="/maps/google_6.367_1.133.html">Ziovou</a><br>
+                <small></small>
+                <span class="geo" style="display:none;"><span class="latitude">6.3666667</span><span class="longitude">1.1333333</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>intermittent stream</td>
+            <td nowrap>N 6° 22' 0''</td>
+            <td nowrap>E 1° 8' 0''</td>
+        </tr>
+        <tr class="odd">
+            <td>
+                <small>4</small>
+                <a href="http://www.geonames.org/2363297/zioveme.html"><img src="/maps/markers/m10-WHITE-P.png"
+                                                                            border="0" alt="P"></a></td>
+            <td><a href="/maps/google_6.517_1.017.html">Ziovémé</a><br>
+                <small>Zioveme,Ziovémé,Zovieme,Zoviémé</small>
+                <span class="geo" style="display:none;"><span class="latitude">6.5166667</span><span class="longitude">1.0166667</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>populated place</td>
+            <td nowrap>N 6° 31' 0''</td>
+            <td nowrap>E 1° 1' 0''</td>
+        </tr>
+        <tr>
+            <td>
+                <small>5</small>
+                <a href="http://www.geonames.org/2363298/ziogba.html"><img src="/maps/markers/m10-WHITE-P.png"
+                                                                           border="0" alt="P"></a></td>
+            <td><a href="/maps/google_6.216_1.382.html">Ziogba</a><br>
+                <small></small>
+                <span class="geo" style="display:none;"><span class="latitude">6.215556</span><span class="longitude">1.381667</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>, Maritime</td>
+            <td>populated place</td>
+            <td nowrap>N 6° 12' 56''</td>
+            <td nowrap>E 1° 22' 54''</td>
+        </tr>
+        <tr class="odd">
+            <td>
+                <small>6</small>
+                <a href="http://www.geonames.org/2363299/zinnglakope.html"><img src="/maps/markers/m10-WHITE-P.png"
+                                                                                border="0" alt="P"></a></td>
+            <td><a href="/maps/google_7.25_1.133.html">Zinnglakopé</a><br>
+                <small></small>
+                <span class="geo" style="display:none;"><span class="latitude">7.25</span><span class="longitude">1.1333333</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>populated place</td>
+            <td nowrap>N 7° 15' 0''</td>
+            <td nowrap>E 1° 8' 0''</td>
+        </tr>
+        <tr>
+            <td>
+                <small>7</small>
+                <a href="http://www.geonames.org/2363300/zikpe.html"><img src="/maps/markers/m10-WHITE-P.png" border="0"
+                                                                          alt="P"></a></td>
+            <td><a href="/maps/google_6.55_0.817.html">Zikpé</a><br>
+                <small>Atatikope,Atatikopé,Zikpe,Zikpé</small>
+                <span class="geo" style="display:none;"><span class="latitude">6.55</span><span class="longitude">0.8166667</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>populated place</td>
+            <td nowrap>N 6° 33' 0''</td>
+            <td nowrap>E 0° 49' 0''</td>
+        </tr>
+        <tr class="odd">
+            <td>
+                <small>8</small>
+                <a href="http://www.geonames.org/2363301/zeve.html"><img src="/maps/markers/m10-WHITE-P.png" border="0"
+                                                                         alt="P"></a></td>
+            <td><a href="/maps/google_6.55_0.983.html">Zévé</a><br>
+                <small></small>
+                <span class="geo" style="display:none;"><span class="latitude">6.55</span><span class="longitude">0.9833333</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>populated place</td>
+            <td nowrap>N 6° 33' 0''</td>
+            <td nowrap>E 0° 59' 0''</td>
+        </tr>
+        <tr>
+            <td>
+                <small>9</small>
+                <a href="http://www.geonames.org/2363302/zenkpleme.html"><img src="/maps/markers/m10-WHITE-P.png"
+                                                                              border="0" alt="P"></a></td>
+            <td><a href="/maps/google_6.35_1.45.html">Zenkplémé</a><br>
+                <small></small>
+                <span class="geo" style="display:none;"><span class="latitude">6.35</span><span
+                        class="longitude">1.45</span></span></td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>populated place</td>
+            <td nowrap>N 6° 21' 0''</td>
+            <td nowrap>E 1° 27' 0''</td>
+        </tr>
+        <tr class="odd">
+            <td>
+                <small>10</small>
+                <a href="http://www.geonames.org/2363303/zeglegan.html"><img src="/maps/markers/m10-WHITE-P.png"
+                                                                             border="0" alt="P"></a></td>
+            <td><a href="/maps/google_6.283_1.317.html">Zéglégan</a><br>
+                <small>Zegle,Zeglegan,Zéglé,Zéglégan</small>
+                <span class="geo" style="display:none;"><span class="latitude">6.2833333</span><span class="longitude">1.3166667</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>populated place</td>
+            <td nowrap>N 6° 17' 0''</td>
+            <td nowrap>E 1° 19' 0''</td>
+        </tr>
+        <tr>
+            <td>
+                <small>11</small>
+                <a href="http://www.geonames.org/2363304/zebede.html"><img src="/maps/markers/m10-WHITE-P.png"
+                                                                           border="0" alt="P"></a></td>
+            <td><a href="/maps/google_6.35_0.933.html">Zébédé</a><br>
+                <small></small>
+                <span class="geo" style="display:none;"><span class="latitude">6.35</span><span class="longitude">0.9333333</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>populated place</td>
+            <td nowrap>N 6° 21' 0''</td>
+            <td nowrap>E 0° 56' 0''</td>
+        </tr>
+        <tr class="odd">
+            <td>
+                <small>12</small>
+                <a href="http://www.geonames.org/2363305/zebe.html"><img src="/maps/markers/m10-WHITE-P.png" border="0"
+                                                                         alt="P"></a></td>
+            <td><a href="/maps/google_6.6_1.5.html">Zébé</a><br>
+                <small></small>
+                <span class="geo" style="display:none;"><span class="latitude">6.6</span><span
+                        class="longitude">1.5</span></span></td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>populated place</td>
+            <td nowrap>N 6° 36' 0''</td>
+            <td nowrap>E 1° 30' 0''</td>
+        </tr>
+        <tr>
+            <td>
+                <small>13</small>
+                <a href="http://www.geonames.org/2363306/zebe.html"><img src="/maps/markers/m10-WHITE-P.png" border="0"
+                                                                         alt="P"></a></td>
+            <td><a href="/maps/google_6.6_1.033.html">Zébé</a><br>
+                <small></small>
+                <span class="geo" style="display:none;"><span class="latitude">6.6</span><span class="longitude">1.0333333</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>populated place</td>
+            <td nowrap>N 6° 36' 0''</td>
+            <td nowrap>E 1° 2' 0''</td>
+        </tr>
+        <tr class="odd">
+            <td>
+                <small>14</small>
+                <a href="http://www.geonames.org/2363307/zebe.html"><img src="/maps/markers/m10-WHITE-P.png" border="0"
+                                                                         alt="P"></a></td>
+            <td><a href="/maps/google_6.25_1.617.html">Zébé</a><br>
+                <small></small>
+                <span class="geo" style="display:none;"><span class="latitude">6.25</span><span class="longitude">1.6166667</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>populated place</td>
+            <td nowrap>N 6° 15' 0''</td>
+            <td nowrap>E 1° 37' 0''</td>
+        </tr>
+        <tr>
+            <td>
+                <small>15</small>
+                <a href="http://www.geonames.org/2363308/zawagou.html"><img src="/maps/markers/m10-WHITE-P.png"
+                                                                            border="0" alt="P"></a></td>
+            <td><a href="/maps/google_10.133_0.517.html">Zawagou</a><br>
+                <small></small>
+                <span class="geo" style="display:none;"><span class="latitude">10.1333333</span><span class="longitude">0.5166667</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>populated place</td>
+            <td nowrap>N 10° 8' 0''</td>
+            <td nowrap>E 0° 31' 0''</td>
+        </tr>
+        <tr class="odd">
+            <td>
+                <small>16</small>
+                <a href="http://www.geonames.org/2363309/zave.html"><img src="/maps/markers/m10-WHITE-P.png" border="0"
+                                                                         alt="P"></a></td>
+            <td><a href="/maps/google_7.417_1.083.html">Zavé</a><br>
+                <small></small>
+                <span class="geo" style="display:none;"><span class="latitude">7.4166667</span><span class="longitude">1.0833333</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>populated place</td>
+            <td nowrap>N 7° 25' 0''</td>
+            <td nowrap>E 1° 5' 0''</td>
+        </tr>
+        <tr>
+            <td>
+                <small>17</small>
+                <a href="http://www.geonames.org/2363310/zanve.html"><img src="/maps/markers/m10-WHITE-P.png" border="0"
+                                                                          alt="P"></a></td>
+            <td><a href="/maps/google_6.283_1.75.html">Zanvé</a><br>
+                <small></small>
+                <span class="geo" style="display:none;"><span class="latitude">6.2833333</span><span class="longitude">1.75</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>populated place</td>
+            <td nowrap>N 6° 17' 0''</td>
+            <td nowrap>E 1° 45' 0''</td>
+        </tr>
+        <tr class="odd">
+            <td>
+                <small>18</small>
+                <a href="http://www.geonames.org/2363311/zamoue.html"><img src="/maps/markers/m10-WHITE-P.png"
+                                                                           border="0" alt="P"></a></td>
+            <td><a href="/maps/google_7.617_1.5.html">Zamoué</a><br>
+                <small></small>
+                <span class="geo" style="display:none;"><span class="latitude">7.6166667</span><span class="longitude">1.5</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>populated place</td>
+            <td nowrap>N 7° 37' 0''</td>
+            <td nowrap>E 1° 30' 0''</td>
+        </tr>
+        <tr>
+            <td>
+                <small>19</small>
+                <a href="http://www.geonames.org/2363312/zalive.html"><img src="/maps/markers/m10-WHITE-P.png"
+                                                                           border="0" alt="P"></a></td>
+            <td><a href="/maps/google_6.25_1.6.html">Zalivé</a><br>
+                <small>Zalive,Zalivé,Zaliwe,Zaliwé</small>
+                <span class="geo" style="display:none;"><span class="latitude">6.25</span><span
+                        class="longitude">1.6</span></span></td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>populated place</td>
+            <td nowrap>N 6° 15' 0''</td>
+            <td nowrap>E 1° 36' 0''</td>
+        </tr>
+        <tr class="odd">
+            <td>
+                <small>20</small>
+                <a href="http://www.geonames.org/2363313/yovovi-kondji.html"><img src="/maps/markers/m10-WHITE-P.png"
+                                                                                  border="0" alt="P"></a></td>
+            <td><a href="/maps/google_6.233_1.667.html">Yovovi Kondji</a><br>
+                <small></small>
+                <span class="geo" style="display:none;"><span class="latitude">6.2333333</span><span class="longitude">1.6666667</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>populated place</td>
+            <td nowrap>N 6° 14' 0''</td>
+            <td nowrap>E 1° 40' 0''</td>
+        </tr>
+        <tr>
+            <td>
+                <small>21</small>
+                <a href="http://www.geonames.org/2363314/yovokodji.html"><img src="/maps/markers/m10-WHITE-P.png"
+                                                                              border="0" alt="P"></a></td>
+            <td><a href="/maps/google_7.717_1.217.html">Yovokodji</a><br>
+                <small></small>
+                <span class="geo" style="display:none;"><span class="latitude">7.7166667</span><span class="longitude">1.2166667</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>populated place</td>
+            <td nowrap>N 7° 43' 0''</td>
+            <td nowrap>E 1° 13' 0''</td>
+        </tr>
+        <tr class="odd">
+            <td>
+                <small>22</small>
+                <a href="http://www.geonames.org/2363315/youssakofe.html"><img src="/maps/markers/m10-WHITE-P.png"
+                                                                               border="0" alt="P"></a></td>
+            <td><a href="/maps/google_6.783_0.583.html">Youssakofé</a><br>
+                <small>Yousakofe,Yousakofé,Youssakofe,Youssakofé</small>
+                <span class="geo" style="display:none;"><span class="latitude">6.7833333</span><span class="longitude">0.5833333</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>populated place</td>
+            <td nowrap>N 6° 47' 0''</td>
+            <td nowrap>E 0° 35' 0''</td>
+        </tr>
+        <tr>
+            <td>
+                <small>23</small>
+                <a href="http://www.geonames.org/2363316/younabe.html"><img src="/maps/markers/m10-WHITE-P.png"
+                                                                            border="0" alt="P"></a></td>
+            <td><a href="/maps/google_7.35_0.917.html">Younabé</a><br>
+                <small>Iounabe,Iounabé,Younabe,Younabé</small>
+                <span class="geo" style="display:none;"><span class="latitude">7.35</span><span class="longitude">0.9166667</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>populated place</td>
+            <td nowrap>N 7° 21' 0''</td>
+            <td nowrap>E 0° 55' 0''</td>
+        </tr>
+        <tr class="odd">
+            <td>
+                <small>24</small>
+                <a href="http://www.geonames.org/2363317/youmaboua.html"><img src="/maps/markers/m10-BLUE-H.png"
+                                                                              border="0" alt="H"></a></td>
+            <td><a href="/maps/google_8.367_0.967.html">Youmaboua</a><br>
+                <small></small>
+                <span class="geo" style="display:none;"><span class="latitude">8.3666667</span><span class="longitude">0.9666667</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>intermittent stream</td>
+            <td nowrap>N 8° 22' 0''</td>
+            <td nowrap>E 0° 58' 0''</td>
+        </tr>
+        <tr>
+            <td>
+                <small>25</small>
+                <a href="http://www.geonames.org/2363318/mont-youdji.html"><img src="/maps/markers/m10-ORANGE-T.png"
+                                                                                border="0" alt="T"></a></td>
+            <td><a href="/maps/google_9.983_1.167.html">Mont Youdji</a><br>
+                <small></small>
+                <span class="geo" style="display:none;"><span class="latitude">9.9833333</span><span class="longitude">1.1666667</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>hill</td>
+            <td nowrap>N 9° 59' 0''</td>
+            <td nowrap>E 1° 10' 0''</td>
+        </tr>
+        <tr class="odd">
+            <td>
+                <small>26</small>
+                <a href="http://www.geonames.org/2363319/youabu.html"><img src="/maps/markers/m10-WHITE-P.png"
+                                                                           border="0" alt="P"></a></td>
+            <td><a href="/maps/google_10.95_0.083.html">Youabu</a><br>
+                <small></small>
+                <span class="geo" style="display:none;"><span class="latitude">10.95</span><span class="longitude">0.0833333</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>populated place</td>
+            <td nowrap>N 10° 57' 0''</td>
+            <td nowrap>E 0° 5' 0''</td>
+        </tr>
+        <tr>
+            <td>
+                <small>27</small>
+                <a href="http://www.geonames.org/2363320/you.html"><img src="/maps/markers/m10-BLUE-H.png" border="0"
+                                                                        alt="H"></a></td>
+            <td><a href="/maps/google_8.283_1.html">You</a><br>
+                <small></small>
+                <span class="geo" style="display:none;"><span class="latitude">8.2833333</span><span class="longitude">1.0</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>intermittent stream</td>
+            <td nowrap>N 8° 17' 0''</td>
+            <td nowrap>E 1° 0' 0''</td>
+        </tr>
+        <tr class="odd">
+            <td>
+                <small>28</small>
+                <a href="http://www.geonames.org/2363321/yoto-kope.html"><img src="/maps/markers/m10-WHITE-P.png"
+                                                                              border="0" alt="P"></a></td>
+            <td><a href="/maps/google_6.7_1.317.html">Yoto Kopé</a><br>
+                <small></small>
+                <span class="geo" style="display:none;"><span class="latitude">6.7</span><span class="longitude">1.3166667</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>populated place</td>
+            <td nowrap>N 6° 42' 0''</td>
+            <td nowrap>E 1° 19' 0''</td>
+        </tr>
+        <tr>
+            <td>
+                <small>29</small>
+                <a href="http://www.geonames.org/2363322/yoto.html"><img src="/maps/markers/m10-BLUE-H.png" border="0"
+                                                                         alt="H"></a></td>
+            <td><a href="/maps/google_6.683_1.3.html">Yoto</a><br>
+                <small>Joto,Yoto</small>
+                <span class="geo" style="display:none;"><span class="latitude">6.6833333</span><span class="longitude">1.3</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>intermittent stream</td>
+            <td nowrap>N 6° 41' 0''</td>
+            <td nowrap>E 1° 18' 0''</td>
+        </tr>
+        <tr class="odd">
+            <td>
+                <small>30</small>
+                <a href="http://www.geonames.org/2363323/yoto.html"><img src="/maps/markers/m10-WHITE-P.png" border="0"
+                                                                         alt="P"></a></td>
+            <td><a href="/maps/google_6.483_0.85.html">Yoto</a><br>
+                <small></small>
+                <span class="geo" style="display:none;"><span class="latitude">6.4833333</span><span class="longitude">0.85</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>populated place</td>
+            <td nowrap>N 6° 29' 0''</td>
+            <td nowrap>E 0° 51' 0''</td>
+        </tr>
+        <tr>
+            <td>
+                <small>31</small>
+                <a href="http://www.geonames.org/2363324/yosiou.html"><img src="/maps/markers/m10-WHITE-P.png"
+                                                                           border="0" alt="P"></a></td>
+            <td><a href="/maps/google_7.1_0.8.html">Yosiou</a><br>
+                <small></small>
+                <span class="geo" style="display:none;"><span class="latitude">7.1</span><span
+                        class="longitude">0.8</span></span></td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>populated place</td>
+            <td nowrap>N 7° 6' 0''</td>
+            <td nowrap>E 0° 48' 0''</td>
+        </tr>
+        <tr class="odd">
+            <td>
+                <small>32</small>
+                <a href="http://www.geonames.org/2363325/yorokoudji.html"><img src="/maps/markers/m10-WHITE-P.png"
+                                                                               border="0" alt="P"></a></td>
+            <td><a href="/maps/google_7.6_1.167.html">Yorokoudji</a><br>
+                <small></small>
+                <span class="geo" style="display:none;"><span class="latitude">7.6</span><span class="longitude">1.1666667</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>populated place</td>
+            <td nowrap>N 7° 36' 0''</td>
+            <td nowrap>E 1° 10' 0''</td>
+        </tr>
+        <tr>
+            <td>
+                <small>33</small>
+                <a href="http://www.geonames.org/2363326/yorokoto.html"><img src="/maps/markers/m10-WHITE-P.png"
+                                                                             border="0" alt="P"></a></td>
+            <td><a href="/maps/google_7.567_1.267.html">Yorokoto</a><br>
+                <small></small>
+                <span class="geo" style="display:none;"><span class="latitude">7.5666667</span><span class="longitude">1.2666667</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>populated place</td>
+            <td nowrap>N 7° 34' 0''</td>
+            <td nowrap>E 1° 16' 0''</td>
+        </tr>
+        <tr class="odd">
+            <td>
+                <small>34</small>
+                <a href="http://www.geonames.org/2363327/yorodo.html"><img src="/maps/markers/m10-WHITE-P.png"
+                                                                           border="0" alt="P"></a></td>
+            <td><a href="/maps/google_6.65_0.983.html">Yorodo</a><br>
+                <small></small>
+                <span class="geo" style="display:none;"><span class="latitude">6.65</span><span class="longitude">0.9833333</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>populated place</td>
+            <td nowrap>N 6° 39' 0''</td>
+            <td nowrap>E 0° 59' 0''</td>
+        </tr>
+        <tr>
+            <td>
+                <small>35</small>
+                <a href="http://www.geonames.org/2363328/yoro-demadeli.html"><img src="/maps/markers/m10-WHITE-P.png"
+                                                                                  border="0" alt="P"></a></td>
+            <td><a href="/maps/google_7.6_1.133.html">Yoro Démadéli</a><br>
+                <small></small>
+                <span class="geo" style="display:none;"><span class="latitude">7.6</span><span class="longitude">1.1333333</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>populated place</td>
+            <td nowrap>N 7° 36' 0''</td>
+            <td nowrap>E 1° 8' 0''</td>
+        </tr>
+        <tr class="odd">
+            <td>
+                <small>36</small>
+                <a href="http://www.geonames.org/2363329/yoro.html"><img src="/maps/markers/m10-BLUE-H.png" border="0"
+                                                                         alt="H"></a></td>
+            <td><a href="/maps/google_7.567_1.317.html">Yoro</a><br>
+                <small></small>
+                <span class="geo" style="display:none;"><span class="latitude">7.5666667</span><span class="longitude">1.3166667</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>intermittent stream</td>
+            <td nowrap>N 7° 34' 0''</td>
+            <td nowrap>E 1° 19' 0''</td>
+        </tr>
+        <tr>
+            <td>
+                <small>37</small>
+                <a href="http://www.geonames.org/2363330/yoro.html"><img src="/maps/markers/m10-WHITE-P.png" border="0"
+                                                                         alt="P"></a></td>
+            <td><a href="/maps/google_10.9_0.75.html">Yoro</a><br>
+                <small></small>
+                <span class="geo" style="display:none;"><span class="latitude">10.9</span><span
+                        class="longitude">0.75</span></span></td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>populated place</td>
+            <td nowrap>N 10° 54' 0''</td>
+            <td nowrap>E 0° 45' 0''</td>
+        </tr>
+        <tr class="odd">
+            <td>
+                <small>38</small>
+                <a href="http://www.geonames.org/2363331/yorle.html"><img src="/maps/markers/m10-BLUE-H.png" border="0"
+                                                                          alt="H"></a></td>
+            <td><a href="/maps/google_10.3_0.8.html">Yorlé</a><br>
+                <small></small>
+                <span class="geo" style="display:none;"><span class="latitude">10.3</span><span
+                        class="longitude">0.8</span></span></td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>intermittent stream</td>
+            <td nowrap>N 10° 18' 0''</td>
+            <td nowrap>E 0° 48' 0''</td>
+        </tr>
+        <tr>
+            <td>
+                <small>39</small>
+                <a href="http://www.geonames.org/2363332/yorhonou.html"><img src="/maps/markers/m10-WHITE-P.png"
+                                                                             border="0" alt="P"></a></td>
+            <td><a href="/maps/google_6.45_1.567.html">Yorhonou</a><br>
+                <small></small>
+                <span class="geo" style="display:none;"><span class="latitude">6.45</span><span class="longitude">1.5666667</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>populated place</td>
+            <td nowrap>N 6° 27' 0''</td>
+            <td nowrap>E 1° 34' 0''</td>
+        </tr>
+        <tr class="odd">
+            <td>
+                <small>40</small>
+                <a href="http://www.geonames.org/2363333/yometie.html"><img src="/maps/markers/m10-WHITE-P.png"
+                                                                            border="0" alt="P"></a></td>
+            <td><a href="/maps/google_6.467_0.983.html">Yométié</a><br>
+                <small></small>
+                <span class="geo" style="display:none;"><span class="latitude">6.4666667</span><span class="longitude">0.9833333</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>populated place</td>
+            <td nowrap>N 6° 28' 0''</td>
+            <td nowrap>E 0° 59' 0''</td>
+        </tr>
+        <tr>
+            <td>
+                <small>41</small>
+                <a href="http://www.geonames.org/2363334/yometchin.html"><img src="/maps/markers/m10-WHITE-P.png"
+                                                                              border="0" alt="P"></a></td>
+            <td><a href="/maps/google_6.479_1.012.html">Yométchin</a><br>
+                <small>Yomechin,Yometchen,Yometchin,Yoméchin,Yométchen,Yométchin</small>
+                <span class="geo" style="display:none;"><span class="latitude">6.479444</span><span class="longitude">1.011667</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>, Maritime</td>
+            <td>populated place</td>
+            <td nowrap>N 6° 28' 46''</td>
+            <td nowrap>E 1° 0' 42''</td>
+        </tr>
+        <tr class="odd">
+            <td>
+                <small>42</small>
+                <a href="http://www.geonames.org/2363335/yolikope.html"><img src="/maps/markers/m10-WHITE-P.png"
+                                                                             border="0" alt="P"></a></td>
+            <td><a href="/maps/google_7.483_1.3.html">Yolikopé</a><br>
+                <small></small>
+                <span class="geo" style="display:none;"><span class="latitude">7.4833333</span><span class="longitude">1.3</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>populated place</td>
+            <td nowrap>N 7° 29' 0''</td>
+            <td nowrap>E 1° 18' 0''</td>
+        </tr>
+        <tr>
+            <td>
+                <small>43</small>
+                <a href="http://www.geonames.org/2363336/yokoe.html"><img src="/maps/markers/m10-WHITE-P.png" border="0"
+                                                                          alt="P"></a></td>
+            <td><a href="/maps/google_6.176_1.147.html">Yokoé</a><br>
+                <small>Yokoe,Yokoe Ablegan,Yokoé,Yokoé Ablégan</small>
+                <span class="geo" style="display:none;"><span class="latitude">6.175833</span><span class="longitude">1.146667</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>, Maritime</td>
+            <td>populated place</td>
+            <td nowrap>N 6° 10' 33''</td>
+            <td nowrap>E 1° 8' 48''</td>
+        </tr>
+        <tr class="odd">
+            <td>
+                <small>44</small>
+                <a href="http://www.geonames.org/2363337/yokele.html"><img src="/maps/markers/m10-WHITE-P.png"
+                                                                           border="0" alt="P"></a></td>
+            <td><a href="/maps/google_6.95_0.667.html">Yokélé</a><br>
+                <small></small>
+                <span class="geo" style="display:none;"><span class="latitude">6.95</span><span class="longitude">0.6666667</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>populated place</td>
+            <td nowrap>N 6° 57' 0''</td>
+            <td nowrap>E 0° 40' 0''</td>
+        </tr>
+        <tr>
+            <td>
+                <small>45</small>
+                <a href="http://www.geonames.org/2363338/yobo.html"><img src="/maps/markers/m10-WHITE-P.png" border="0"
+                                                                         alt="P"></a></td>
+            <td><a href="/maps/google_6.413_1.329.html">Yobo</a><br>
+                <small>Iobo,Yobo</small>
+                <span class="geo" style="display:none;"><span class="latitude">6.412778</span><span class="longitude">1.328889</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>, Maritime</td>
+            <td>populated place</td>
+            <td nowrap>N 6° 24' 46''</td>
+            <td nowrap>E 1° 19' 44''</td>
+        </tr>
+        <tr class="odd">
+            <td>
+                <small>46</small>
+                <a href="http://www.geonames.org/2363339/yibouekope.html"><img src="/maps/markers/m10-WHITE-P.png"
+                                                                               border="0" alt="P"></a></td>
+            <td><a href="/maps/google_7.833_1.2.html">Yibouékopé</a><br>
+                <small></small>
+                <span class="geo" style="display:none;"><span class="latitude">7.8333333</span><span class="longitude">1.2</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>populated place</td>
+            <td nowrap>N 7° 50' 0''</td>
+            <td nowrap>E 1° 12' 0''</td>
+        </tr>
+        <tr>
+            <td>
+                <small>47</small>
+                <a href="http://www.geonames.org/2363340/yeyehoue.html"><img src="/maps/markers/m10-WHITE-P.png"
+                                                                             border="0" alt="P"></a></td>
+            <td><a href="/maps/google_7.333_1.55.html">Yéyéhoué</a><br>
+                <small></small>
+                <span class="geo" style="display:none;"><span class="latitude">7.3333333</span><span class="longitude">1.55</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>populated place</td>
+            <td nowrap>N 7° 20' 0''</td>
+            <td nowrap>E 1° 33' 0''</td>
+        </tr>
+        <tr class="odd">
+            <td>
+                <small>48</small>
+                <a href="http://www.geonames.org/2363341/yeviefe.html"><img src="/maps/markers/m10-WHITE-P.png"
+                                                                            border="0" alt="P"></a></td>
+            <td><a href="/maps/google_6.817_0.583.html">Yéviéfé</a><br>
+                <small></small>
+                <span class="geo" style="display:none;"><span class="latitude">6.8166667</span><span class="longitude">0.5833333</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>populated place</td>
+            <td nowrap>N 6° 49' 0''</td>
+            <td nowrap>E 0° 35' 0''</td>
+        </tr>
+        <tr>
+            <td>
+                <small>49</small>
+                <a href="http://www.geonames.org/2363342/yerobouang.html"><img src="/maps/markers/m10-BLUE-H.png"
+                                                                               border="0" alt="H"></a></td>
+            <td><a href="/maps/google_10.683_0.65.html">Yérobouang</a><br>
+                <small></small>
+                <span class="geo" style="display:none;"><span class="latitude">10.6833333</span><span class="longitude">0.65</span></span>
+            </td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>intermittent stream</td>
+            <td nowrap>N 10° 41' 0''</td>
+            <td nowrap>E 0° 39' 0''</td>
+        </tr>
+        <tr class="odd">
+            <td>
+                <small>50</small>
+                <a href="http://www.geonames.org/2363343/yerangue.html"><img src="/maps/markers/m10-WHITE-P.png"
+                                                                             border="0" alt="P"></a></td>
+            <td><a href="/maps/google_10.75_0.25.html">Yérangué</a><br>
+                <small></small>
+                <span class="geo" style="display:none;"><span class="latitude">10.75</span><span
+                        class="longitude">0.25</span></span></td>
+            <td><a href="/countries/TG/togo.html">Togo</a>,</td>
+            <td>populated place</td>
+            <td nowrap>N 10° 45' 0''</td>
+            <td nowrap>E 0° 15' 0''</td>
+        </tr>
+        <tr class="tfooter">
+            <td colspan=6></td>
+        </tr>
+    </table>
+    <a href=/search.html?q=&startRow=50>next &gt;</a>
+
+</div>
+
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div id="pageFooter">
+    info@geonames.org <img src="/img/smallant.gif" alt="ant" align="middle" hspace="40" border="0">
+    <p>
+        <a href="/">GeoNames Home</a>
+        <span class="separator">&#8226;</span>
+        <a href="/postal-codes/">Postal Codes</a>
+        <span class="separator">&#8226;</span>
+        <a href="/export/">Download / Webservice</a>
+        <span class="separator">&#8226;</span>
+        <a href="http://forum.geonames.org">Forum</a>
+        <span class="separator">&#8226;</span>
+        <a href="http://geonames.wordpress.com">Blog</a>
+        <span class="separator">&#8226;</span>
+        <a href="/sitemap.html">Sitemap</a>
+</div>
+</body>
+</html>

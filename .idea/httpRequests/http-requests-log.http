@@ -1,0 +1,40 @@
+GET http://api.open-notify.org/astros.json
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-03-30T010417.200.json
+
+###
+
+GET http://api.open-notify.org/astros.json
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-03-30T010344.200.json
+
+###
+
+GET http://api.open-notify.org/astros.json
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-03-30T010302.200.json
+
+###
+
+GET http://www.geonames.org/search.html?q=Alhama de murcia
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-03-22T090121.200.html
+
+###
+
+GET http://www.geonames.org/search.html
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-03-22T085858.200.html
+
+###
+
