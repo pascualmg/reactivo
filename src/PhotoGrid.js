@@ -5,9 +5,9 @@ import { Observable, Subject, ReplaySubject, from, of, range } from 'rxjs';
 import { map, filter, switchMap } from 'rxjs/operators';
 
 export default class PhotoGrid extends React.Component{
-  iteraConUnMap = function iteraConUnMap()
-  {
+  iteraConUnMap = function iteraConUnMap() {
     const arr = ['algo','algo','algo','algo','algo','algo','algo','algo','algo','algo'];
+
     return arr.map(
       (item) => <span>{item}</span>
     );
