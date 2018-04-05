@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
-import './Photo';
-import Photo from "./Photo";
 import PhotoGrid from "./PhotoGrid";
 
 class App extends Component {

@@ -4,8 +4,7 @@ import Photo from "./Photo";
 import {Observable} from 'rxjs';
 
 export default class PhotoGrid extends React.Component {
-  arr = ['algo', 'algo', 'algo', 'algo', 'algo', 'algo', 'algo', 'algo', 'algo', 'algo'];
-
+   arr = ['uno', 'do', 'tre', 'cuatro', 'cinco', 'sei', 'siete', 'ocho', 'nueve', 'die'];
   iteraConUnObservable = function iteraConUnObservable() {
     const flujete$ = this.createObservableFromArray(this.arr);
 
@@ -14,7 +13,7 @@ export default class PhotoGrid extends React.Component {
       .subscribe({
       next: x => {
         console.log('llega', x);
-        newArr.push(<span><Photo name={x.i}/>{x.name}</span>)
+        newArr.push(<span><Photo name={x.item}/>{x.name}</span>)
       },
       error: err => console.error('something wrong occurred: ' + err),
       complete: () => console.log('done'),
