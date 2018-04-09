@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95678f39-1409-4dd6-943a-33b60c86fc49" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/component/FunctionalTank.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Tank.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Tank.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,14 +34,96 @@
     <splitter split-orientation="vertical" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/index.js">
+          <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/App.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="200">
-                  <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+                <state relative-caret-position="152">
+                  <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+                  <folding>
+                    <element signature="e#0#39#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PhotoGrid.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/PhotoGrid.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="114">
+                  <caret line="6" column="88" selection-start-line="6" selection-start-column="88" selection-end-line="6" selection-end-column="88" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
-                    <element signature="n#!!block;n#FunctionalTank#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/package.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="399">
+                  <caret line="21" selection-start-line="21" selection-end-line="21" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="package-lock.json" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/package-lock.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="8398">
+                  <caret line="442" column="6" selection-start-line="442" selection-start-column="6" selection-end-line="442" selection-end-column="6" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="95">
+                  <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="FunctionalTank.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/component/FunctionalTank.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="228">
+                  <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+                  <folding>
+                    <element signature="e#390#491#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="registerServiceWorker.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/registerServiceWorker.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="361">
+                  <caret line="19" selection-start-line="19" selection-end-line="19" />
+                  <folding>
+                    <element signature="e#885#2198#0" expanded="true" />
+                    <element signature="e#1480#2190#0" expanded="true" />
+                    <element signature="n#!!block;n#registerValidSW#0" expanded="true" />
+                    <element signature="n#!!block;n#checkValidServiceWorker#0" expanded="true" />
+                    <element signature="e#3501#4079#0" expanded="true" />
+                    <element signature="e#4098#4205#0" expanded="true" />
+                    <element signature="n#!!block;n#unregister#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="570">
+                  <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+                  <folding>
+                    <element signature="n#head#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -51,14 +133,23 @@
       </split-first>
       <split-second>
         <leaf>
+          <file leaf-file-name="Photo.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Photo.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="95">
+                  <caret line="5" selection-start-line="5" selection-end-line="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="Tank.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/component/Tank.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="399">
-                  <caret line="28" column="15" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
+                  <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
                   <folding>
                     <element signature="e#29#240#0" expanded="true" />
-                    <element signature="e#460#735#0" expanded="true" />
+                    <element signature="e#329#604#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -93,6 +184,7 @@
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/component/Tank.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/component/FunctionalTank.js" />
       </list>
     </option>
   </component>
@@ -348,7 +440,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="JavaScript Debug.Unnamed">
     <configuration name="ChromeEnRealTime" type="ChromiumRemoteDebugType" factoryName="Chromium Remote" port="9229" />
     <configuration name="renders without crashing" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
@@ -362,6 +454,7 @@
         <test-name value="renders without crashing" />
       </test-names>
     </configuration>
+    <configuration name="Unnamed" type="JavascriptDebugType" factoryName="JavaScript Debug" uri="http://localhost:3000" />
     <configuration name="eject" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -391,6 +484,7 @@
     </configuration>
     <list>
       <item itemvalue="Attach to Node.js/Chrome.ChromeEnRealTime" />
+      <item itemvalue="JavaScript Debug.Unnamed" />
       <item itemvalue="Jest.renders without crashing" />
       <item itemvalue="npm.test" />
       <item itemvalue="npm.eject" />
@@ -431,7 +525,7 @@
       <workItem from="1522866738634" duration="6812000" />
       <workItem from="1522877263291" duration="10430000" />
       <workItem from="1523289137828" duration="821000" />
-      <workItem from="1523292486511" duration="9794000" />
+      <workItem from="1523292486511" duration="12589000" />
     </task>
     <task id="LOCAL-00001" summary="rulando un poco">
       <created>1522867155063</created>
@@ -510,7 +604,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523299365935</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="functionalTank done.">
+      <created>1523302667548</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1523302667548</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -543,21 +644,21 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43650000" />
+    <option name="totallyTimeSpent" value="46445000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1024" height="1114" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.329718" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.07751938" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2720588" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.27114967" />
       <window_info id="npm" order="2" sideWeight="0.19255319" side_tool="true" weight="0.10921843" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="right" id="Remote Host" order="3" weight="0.32998326" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4807198" weight="0.2049505" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4807198" visible="true" weight="0.2045929" />
       <window_info anchor="bottom" id="Docker" order="11" weight="0.32988802" />
       <window_info anchor="right" id="Database" order="5" weight="0.32998326" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -618,7 +719,8 @@
     <MESSAGE value="https://reactjs.org/docs/components-and-props.html" />
     <MESSAGE value="descomponiendo la response de la render en ´elements´ básicos de JSX" />
     <MESSAGE value="usando un rootNode diferente al default." />
-    <option name="LAST_COMMIT_MESSAGE" value="usando un rootNode diferente al default." />
+    <MESSAGE value="functionalTank done." />
+    <option name="LAST_COMMIT_MESSAGE" value="functionalTank done." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -646,8 +748,6 @@
           <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#258#419#0" expanded="true" />
-            <element signature="e#466#564#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -673,10 +773,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="n#!!block;n#FunctionalTank#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -712,8 +808,6 @@
           <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#258#419#0" expanded="true" />
-            <element signature="e#466#564#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -737,8 +831,6 @@
           <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#258#419#0" expanded="true" />
-            <element signature="e#466#564#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -762,8 +854,6 @@
           <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#258#419#0" expanded="true" />
-            <element signature="e#466#564#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -774,8 +864,6 @@
           <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#258#419#0" expanded="true" />
-            <element signature="e#466#564#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -786,8 +874,6 @@
           <caret line="13" column="71" lean-forward="true" selection-start-line="13" selection-start-column="71" selection-end-line="13" selection-end-column="71" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#258#419#0" expanded="true" />
-            <element signature="e#466#564#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -808,8 +894,6 @@
           <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#258#419#0" expanded="true" />
-            <element signature="e#466#564#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -836,8 +920,6 @@
           <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#258#419#0" expanded="true" />
-            <element signature="e#466#564#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -865,8 +947,6 @@
           <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#258#419#0" expanded="true" />
-            <element signature="e#466#564#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -887,8 +967,6 @@
           <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#258#419#0" expanded="true" />
-            <element signature="e#466#564#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -985,37 +1063,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Photo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="442" column="6" selection-start-line="442" selection-start-column="6" selection-end-line="442" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PhotoGrid.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="6" column="88" selection-start-line="6" selection-start-column="88" selection-end-line="6" selection-end-column="88" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom.development.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-399">
@@ -1033,21 +1080,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
+    <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        <state relative-caret-position="570">
+          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#258#419#0" expanded="true" />
-            <element signature="e#466#564#0" expanded="true" />
+            <element signature="n#head#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/registerServiceWorker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
+        <state relative-caret-position="361">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="e#885#2198#0" expanded="true" />
@@ -1061,43 +1108,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component/FunctionalTank.js">
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
+        <state relative-caret-position="8398">
+          <caret line="442" column="6" selection-start-line="442" selection-start-column="6" selection-end-line="442" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+        <state relative-caret-position="399">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PhotoGrid.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="88" selection-start-line="6" selection-start-column="88" selection-end-line="6" selection-end-column="88" />
           <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Photo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/component/Tank.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
-          <caret line="28" column="15" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
+          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
           <folding>
             <element signature="e#29#240#0" expanded="true" />
-            <element signature="e#460#735#0" expanded="true" />
+            <element signature="e#329#604#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="95">
+          <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/FunctionalTank.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="n#!!block;n#FunctionalTank#0" expanded="true" />
+            <element signature="e#390#491#0" expanded="true" />
           </folding>
         </state>
       </provider>
