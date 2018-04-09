@@ -9,7 +9,7 @@ import React from 'react';
 export default class Tank extends React.Component {
   render() {
     const info =
-      <div className="genericTank">
+      <div className="tankInfo">
         El tanke tiene:{this.props.material}
         le cogen : {this.props.maxCapacity}
         Contenido actual: {this.props.actualQuantity}
@@ -17,11 +17,11 @@ export default class Tank extends React.Component {
       </div>;
 
     const bar =
-      <progress max={this.props.maxCapacity} value={this.props.actualQuantity}>
+      <progress className={"tankBar"} max={this.props.maxCapacity} value={this.props.actualQuantity}>
       </progress>;
 
-      console.log('bar', bar );//TODO: borrame.
+    const all = <div>{info}{bar}</div>;
 
-    return bar ;
+    return all ;
   }
 }
