@@ -21,7 +21,7 @@ export default class Tank extends React.Component {
       </progress>;
 
     const Tank =
-      <div>
+      <div className={"Tank"}>
         {bar}
         {info}
       </div>;
