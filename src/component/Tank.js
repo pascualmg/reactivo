@@ -20,8 +20,12 @@ export default class Tank extends React.Component {
       <progress className={"tankBar"} max={this.props.maxCapacity} value={this.props.actualQuantity}>
       </progress>;
 
-    const all = <div>{info}{bar}</div>;
+    const Tank =
+      <div>
+        {bar}
+        {info}
+      </div>;
 
-    return all ;
+    return Tank;
   }
 }
